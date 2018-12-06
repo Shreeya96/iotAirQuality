@@ -41,7 +41,7 @@ $(document).ready(function () {
         id: 'Temperature',
         type: 'linear',
         scaleLabel: {
-          labelString: 'Temperature(C)',
+          labelString: 'CO2',
           display: true
         },
         position: 'left',
@@ -49,7 +49,7 @@ $(document).ready(function () {
           id: 'Humidity',
           type: 'linear',
           scaleLabel: {
-            labelString: 'Humidity(%)',
+            labelString: 'VOC',
             display: true
           },
           position: 'right'
@@ -81,6 +81,11 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('temp data' + obj.temperature);
       // only keep no more than 50 points in the line chart
+       if(obj.temperature>800){
+         document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
+      }else{
+           document.getElementById("indicator").innerHTML="Safe ";
+      }
       const maxLen = 50;
       var len = timeData.length;
       if (len > maxLen) {
