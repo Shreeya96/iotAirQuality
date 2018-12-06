@@ -81,13 +81,13 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('tempy data' + obj.temperature);
       // only keep no more than 50 points in the line chart
-       if(obj.temperature>500){
-           console.log('bad air ');
-         document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
-      }else{
-          console.log('good air ');
-           document.getElementById("indicator").innerHTML="Safe ";
-      }
+      if(obj.temperature>800){
+	document.getElementById("indicator1");
+		document.getElementById("indicator2").style.display = "none";
+}else {
+		document.getElementById("indicator2");
+		document.getElementById("indicator1").style.display = "none";
+}
       const maxLen = 50;
       var len = timeData.length;
       if (len > maxLen) {
