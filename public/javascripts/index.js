@@ -85,7 +85,7 @@ $(document).ready(function () {
          console.log('baadd');
 	document.getElementById("indicator1");
 		document.getElementById("indicator2").style.display = "none";
-}else {
+}else if {
         console.log('gooodd');
 		document.getElementById("indicator2");
 		document.getElementById("indicator1").style.display = "none";
