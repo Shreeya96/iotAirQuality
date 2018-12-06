@@ -85,12 +85,12 @@ $(document).ready(function () {
          console.log('baadd');
          document.getElementById("indicator1").style.display = "block";
         //document.getElementById("indicator1").innerHTML="bad air quality";
-        document.getElementById("indicator2").style.display = "none";
+        //document.getElementById("indicator2").style.display = "none";
 }else {
         console.log('gooodd');
 		document.getElementById("indicator1").style.display = "none";
        // document.getElementById("indicator1").innerHTML="good air quality";
-		document.getElementById("indicator2").style.display = "block";
+		//document.getElementById("indicator2").style.display = "block";
 }
       const maxLen = 50;
       var len = timeData.length;
