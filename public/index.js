@@ -79,12 +79,14 @@ $(document).ready(function () {
       }
       timeData.push(obj.time);
       temperatureData.push(obj.temperature);
-      console.log('temp data' + obj.temperature);
+      console.log('bahercha temp data' + obj.temperature);
       // only keep no more than 50 points in the line chart
       
       if(obj.temperature>800){
+           console.log('bahercha bad air');
          document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
       }else{
+          console.log('bahercha safe air');
            document.getElementById("indicator").innerHTML="Safe";
       }
       const maxLen = 50;
