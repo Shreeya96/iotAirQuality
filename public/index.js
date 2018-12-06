@@ -85,7 +85,7 @@ $(document).ready(function () {
       if(obj.temperature>800){
          document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
       }else{
-           document.getElementById("indicator").innerHTML=" ";
+           document.getElementById("indicator").innerHTML="Safe";
       }
       const maxLen = 50;
       var len = timeData.length;
