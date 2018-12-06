@@ -84,11 +84,11 @@ $(document).ready(function () {
      if(obj.temperature>=800){
          console.log('baadd');
 	document.getElementById("indicator1");
-		document.getElementById("indicator2").style.display = "none";
+		//document.getElementById("indicator2").style.display = "none";
 }else if(obj.temperature<800){
         console.log('gooodd');
 		document.getElementById("indicator2");
-		document.getElementById("indicator1").style.display = "none";
+		//document.getElementById("indicator1").style.display = "none";
 }
       const maxLen = 50;
       var len = timeData.length;
