@@ -81,14 +81,14 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('tempy data' + obj.temperature);
       // only keep no more than 50 points in the line chart
-     if(obj.temperature>=800){
+     if(obj.temperature>=500){
          console.log('baadd');
-	document.getElementById("indicator1");
-		//document.getElementById("indicator2").style.display = "none";
-}else if(obj.temperature<800){
+        document.getElementById("indicator1").style.display="block";
+        document.getElementById("indicator2").style.display = "none";
+}else {
         console.log('gooodd');
-		document.getElementById("indicator2");
-		//document.getElementById("indicator1").style.display = "none";
+		document.getElementById("indicator1").style.display="none";
+		document.getElementById("indicator2").style.display = "block";
 }
       const maxLen = 50;
       var len = timeData.length;
