@@ -81,6 +81,12 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('temp data' + obj.temperature);
       // only keep no more than 50 points in the line chart
+      
+      if(obj.temperature>800){
+         document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
+      }else{
+           document.getElementById("indicator").innerHTML=" ";
+      }
       const maxLen = 50;
       var len = timeData.length;
       if (len > maxLen) {
