@@ -81,7 +81,14 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('temp data most outside' + obj.temperature);
       // only keep no more than 50 points in the line chart
-      const maxLen = 50;
+      if(obj.temperature>800){
+	document.getElementById("indicator1");
+		document.getElementById("indicator2").style.display = "none";
+}else {
+		document.getElementById("indicator2");
+		document.getElementById("indicator1").style.display = "none";
+}
+     const maxLen = 50;
       var len = timeData.length;
       if (len > maxLen) {
         timeData.shift();
