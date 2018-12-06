@@ -81,7 +81,7 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('tempy data' + obj.temperature);
       // only keep no more than 50 points in the line chart
-     if(obj.temperature>=500){
+     if(obj.temperature>=700){
          console.log('baadd');
         document.getElementById("indicator1").innerHTML="bad air quality";
         //document.getElementById("indicator2").style.display = "none";
