@@ -71,7 +71,7 @@ $(document).ready(function () {
     console.log('Successfully connect WebSocket');
   }
   ws.onmessage = function (message) {
-    console.log('receive message' + message.data);
+    console.log('receive message !!!' + message.data);
     try {
       var obj = JSON.parse(message.data);
       if(!obj.time || !obj.temperature) {
