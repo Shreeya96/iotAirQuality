@@ -79,11 +79,13 @@ $(document).ready(function () {
       }
       timeData.push(obj.time);
       temperatureData.push(obj.temperature);
-      console.log('temp data' + obj.temperature);
+      console.log('tempy data' + obj.temperature);
       // only keep no more than 50 points in the line chart
-       if(obj.temperature>800){
+       if(obj.temperature>500){
+           console.log('bad air ');
          document.getElementById("indicator").innerHTML="Alert Bad Air Quality";
       }else{
+          console.log('good air ');
            document.getElementById("indicator").innerHTML="Safe ";
       }
       const maxLen = 50;
