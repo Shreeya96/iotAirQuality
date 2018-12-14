@@ -87,15 +87,15 @@ $(document).ready(function () {
          //document.getElementById("indicator1").style.display = "block";
          //document.getElementById("indicator1").innerHTML="bad air quality " + obj.temperature + " ppm";
          //document.getElementById("indicator2").style.display = "none";
-         document.getElementById("indicator1").className = "alert alert-danger";
-	document.getElementById("indicator1").innerHTML="HAZARDOUS AIR QUALITY (" + obj.temperature+ " PPM)" + " REFRAIN FROM STEPPING OUTSIDE!";
+            document.getElementById("indicator1").className = "alert alert-danger";
+            document.getElementById("indicator1").innerHTML="PATIENTS ENVIRONMENT UNSAFE (" + obj.temperature+ " PPM)";
 }else {
         console.log('gooodd');
 		//document.getElementById("indicator1").style.display = "none";
        //document.getElementById("indicator1").innerHTML="good air quality " + obj.temperature + " ppm";
 		//document.getElementById("indicator2").style.display = "block";
         document.getElementById("indicator1").className = "alert alert-success";
-	document.getElementById("indicator1").innerHTML="AIR QUALITY IS SAFE (" + obj.temperature+ " PPM)";
+	document.getElementById("indicator1").innerHTML="PATIENTS ENVIRONMENT SAFE (" + obj.temperature+ " PPM)";
         }
       const maxLen = 50;
       var len = timeData.length;
