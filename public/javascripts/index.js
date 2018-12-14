@@ -84,15 +84,19 @@ $(document).ready(function () {
      //document.getElementById("tempy").innerHTML=;
      if(obj.temperature>=700){
          console.log('baadd');
-         document.getElementById("indicator1").style.display = "block";
+         //document.getElementById("indicator1").style.display = "block";
          //document.getElementById("indicator1").innerHTML="bad air quality " + obj.temperature + " ppm";
-         document.getElementById("indicator2").style.display = "none";
+         //document.getElementById("indicator2").style.display = "none";
+         document.getElementById("indicator1").className = "alert alert-danger";
+	document.getElementById("indicator1").innerHTML="HAZARDOUS AIR QUALITY (" + obj.temperature+ " PPM)" + " REFRAIN FROM STEPPING OUTSIDE!";
 }else {
         console.log('gooodd');
-		document.getElementById("indicator1").style.display = "none";
+		//document.getElementById("indicator1").style.display = "none";
        //document.getElementById("indicator1").innerHTML="good air quality " + obj.temperature + " ppm";
-		document.getElementById("indicator2").style.display = "block";
-}
+		//document.getElementById("indicator2").style.display = "block";
+        document.getElementById("indicator1").className = "alert alert-success";
+	document.getElementById("indicator1").innerHTML="AIR QUALITY IS SAFE (" + obj.temperature+ " PPM)";
+        }
       const maxLen = 50;
       var len = timeData.length;
       if (len > maxLen) {
