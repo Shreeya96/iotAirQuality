@@ -12,7 +12,7 @@ $(document).ready(function () {
         borderColor: "rgba(255, 204, 0, 1)",
         pointBoarderColor: "rgba(255, 204, 0, 1)",
         backgroundColor: "rgba(255, 0, 0, 0.4)",
-        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+        pointHoverBackgroundColor: "rgba(255, 0, 0, 1)",
         pointHoverBorderColor: "rgba(255, 0, 0, 1)",
         data: temperatureData
       },
