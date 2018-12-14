@@ -34,7 +34,7 @@ $(document).ready(function () {
     title: {
       display: true,
       text: 'Air Quality Real-time Data',
-      fontSize: 100
+      fontSize: 36
     },
     scales: {
       yAxes: [{
