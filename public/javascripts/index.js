@@ -81,15 +81,16 @@ $(document).ready(function () {
       temperatureData.push(obj.temperature);
       console.log('tempy data' + obj.temperature);
       // only keep no more than 50 points in the line chart
+     //document.getElementById("tempy").innerHTML=;
      if(obj.temperature>=700){
          console.log('baadd');
          //document.getElementById("indicator1").style.display = "block";
-        document.getElementById("indicator1").innerHTML="bad air quality";
-        //document.getElementById("indicator2").style.display = "none";
+         document.getElementById("indicator1").innerHTML="bad air quality " + obj.temperature;
+         //document.getElementById("indicator2").style.display = "none";
 }else {
         console.log('gooodd');
 		//document.getElementById("indicator1").style.display = "none";
-       document.getElementById("indicator1").innerHTML="good air quality";
+       document.getElementById("indicator1").innerHTML="good air quality" + obj.temperature;
 		//document.getElementById("indicator2").style.display = "block";
 }
       const maxLen = 50;
